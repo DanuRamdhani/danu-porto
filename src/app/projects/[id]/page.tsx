@@ -4,7 +4,7 @@ import { Project } from "@prisma/client";
 
 const prisma = new PrismaClient()
 
-export default async function DetailProjectPage({ params }: { params: Promise<any> }) {
+export default async function DetailProjectPage({ params }: { params: Promise<{ id: string }> }) {
     const { id } = await params
 
     const project = await prisma.project.findUnique({
