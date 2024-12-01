@@ -1,5 +1,7 @@
 import Link from "next/link";
 import ProjectCategory from "./ProjectCategory";
+import { Project } from "@prisma/client";
+import Image from "next/image";
 
 export const Projects = ({ listProject, isProjectPage }: { listProject: Project[], isProjectPage: boolean }) => {
     return (
@@ -24,7 +26,7 @@ export const Projects = ({ listProject, isProjectPage }: { listProject: Project[
                 {listProject.map((project) => (
                     <Link href={`/projects/${project.id}`} aria-label="View Item" key={project.id}>
                         <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
-                            <img
+                            <Image
                                 className="object-cover w-full h-56 md:h-64 xl:h-80"
                                 src={project.image ?? "images/no-image.png"}
                                 alt=""

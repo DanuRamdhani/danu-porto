@@ -3,6 +3,7 @@ import { Header } from "@/components/Header";
 import { Projects } from "@/components/Projects";
 import { PrismaClient } from '@prisma/client'
 import { unstable_cache as cache } from "next/cache";
+import { Project } from "@prisma/client";
 
 const prisma = new PrismaClient();
 
@@ -16,7 +17,7 @@ export default async function Home() {
     <>
       <Header />
       <Education />
-      <Projects listProject={projects as any} isProjectPage={false} />
+      <Projects listProject={projects as Project[]} isProjectPage={false} />
     </>
   );
 };

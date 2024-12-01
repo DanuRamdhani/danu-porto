@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export const Header = () => {
 	return (
 		<div className="relative flex flex-col py-16 lg:pt-0 lg:flex-col lg:pb-0">
@@ -35,7 +37,7 @@ export const Header = () => {
 				</div>
 			</div>
 			<div className="inset-y-0 right-0 w-full max-w-xl px-4 mx-auto lg:pl-8 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-1/2 lg:max-w-full lg:absolute xl:px-0">
-				<img
+				<Image
 					className="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none sm:h-96 lg:h-full"
 					src="/images/my-foto.jpg"
 					alt=""

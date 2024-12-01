@@ -1,5 +1,6 @@
 import { ProjectDetail } from "@/components/ProjectDetail";
 import { PrismaClient } from '@prisma/client'
+import { Project } from "@prisma/client";
 
 const prisma = new PrismaClient()
 
@@ -13,6 +14,6 @@ export default async function DetailProjectPage({ params }: { params: any }) {
     });
 
     return (
-        <ProjectDetail project={project as any} />
+        <ProjectDetail project={project as Project} />
     );
 }

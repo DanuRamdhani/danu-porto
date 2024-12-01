@@ -54,14 +54,14 @@ export const Nav = () => {
         </ul>
         <ul className="items-center hidden space-x-8 lg:flex">
           <li>
-            <a
+            <Link
               href="#contact"
               className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-blue-900 hover:bg-blue-950 focus:shadow-outline focus:outline-none"
               aria-label="Sign up"
               title="Sign up"
             >
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
         <div className="lg:hidden">
@@ -91,7 +91,7 @@ export const Nav = () => {
               <div className="p-5 bg-white border rounded shadow-sm">
                 <div className="flex items-center justify-between mb-4">
                   <div>
-                    <a
+                    <Link
                       href="/"
                       aria-label="Company"
                       title="Company"
@@ -100,7 +100,7 @@ export const Nav = () => {
                       <span className="text-xl font-bold tracking-wide text-gray-800 uppercase">
                         DANU.PORTO
                       </span>
-                    </a>
+                    </Link>
                   </div>
                   <div>
                     <button
@@ -152,14 +152,14 @@ export const Nav = () => {
                       </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="#contact"
                         className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-blue-900 hover:bg-blue-950 focus:shadow-outline focus:outline-none"
                         aria-label="Sign up"
                         title="Sign up"
                       >
                         Contact
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </nav>
