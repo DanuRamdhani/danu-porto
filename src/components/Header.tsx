@@ -40,7 +40,10 @@ export const Header = () => {
 				<Image
 					className="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none sm:h-96 lg:h-full"
 					src="/images/my-foto.jpg"
-					alt=""
+					width={500}
+					height={500}
+					priority={true}
+					alt="my foto"
 				/>
 			</div>
 		</div>

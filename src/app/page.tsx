@@ -2,16 +2,13 @@ import { Education } from "@/components/Education";
 import { Header } from "@/components/Header";
 import { Projects } from "@/components/Projects";
 import { PrismaClient } from '@prisma/client'
-import { unstable_cache as cache } from "next/cache";
 import { Project } from "@prisma/client";
 
 const prisma = new PrismaClient();
 
-const getCachedProjects = cache(() => prisma.project.findMany({ take: 4 }));
-
 export default async function Home() {
 
-  const projects = await getCachedProjects();
+  const projects = await prisma.project.findMany({ take: 4 });
 
   return (
     <>

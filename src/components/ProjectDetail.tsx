@@ -21,7 +21,6 @@ export function ProjectDetail({ project }: { project: Project }) {
                     </p>
                     <Link
                         onClick={() => {
-                            console.log(`link : ${project.link}`);
                             if (project.github === null) {
                                 toast('Not yet github for this project', {
                                     position: 'top-right',
@@ -42,11 +41,9 @@ export function ProjectDetail({ project }: { project: Project }) {
                     <div className="flex items-center space-x-4">
                         <Link
                             onClick={() => {
-                                console.log(`link : ${project.link}`);
                                 if (project.link === null) {
                                     toast('Not yet link for this project', {
                                         position: 'top-right',
-                                        className: '',
                                         closeButton: true,
                                     });
                                 }
@@ -69,7 +66,10 @@ export function ProjectDetail({ project }: { project: Project }) {
                 <div>
                     <Image
                         className="object-cover w-full h-56 rounded shadow-lg sm:h-96"
-                        src="https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
+                        src={project.image || "/images/no-image.png"}
+                        width={500}
+                        height={500}
+                        priority={true}
                         alt="" />
                 </div>
             </div>

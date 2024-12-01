@@ -28,7 +28,10 @@ export const Projects = ({ listProject, isProjectPage }: { listProject: Project[
                         <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
                             <Image
                                 className="object-cover w-full h-56 md:h-64 xl:h-80"
-                                src={project.image ?? "images/no-image.png"}
+                                src={project.image || "/images/no-image.png"}
+                                width={500}
+                                height={500}
+                                priority={true}
                                 alt=""
                             />
                             <div className="absolute inset-0 px-6 py-4 transition-opacity duration-200 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
