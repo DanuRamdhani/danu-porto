@@ -21,6 +21,8 @@ export const metadata: Metadata = {
   description: "Danu Ramdhani - Portofolio",
 };
 
+export const revalidate = 60;
+
 export default function RootLayout({
   children,
 }: Readonly<{
