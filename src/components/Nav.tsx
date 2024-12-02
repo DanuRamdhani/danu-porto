@@ -44,8 +44,8 @@ export const Nav = () => {
             <Link
               href="https://drive.google.com/drive/folders/1jQQLKbmRDwuba0W7eH7v5aAm25Otl_Ur?usp=sharing"
               target="_blank"
-              aria-label="Product pricing"
-              title="Product pricing"
+              aria-label="Certification"
+              title="Certification"
               className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-900"
             >
               Certification
@@ -57,8 +57,8 @@ export const Nav = () => {
             <Link
               href="#contact"
               className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-blue-900 hover:bg-blue-950 focus:shadow-outline focus:outline-none"
-              aria-label="Sign up"
-              title="Sign up"
+              aria-label="Contact"
+              title="Contact"
             >
               Contact
             </Link>
@@ -123,8 +123,8 @@ export const Nav = () => {
                     <li>
                       <Link
                         href="/"
-                        aria-label="Our product"
-                        title="Our product"
+                        aria-label="Home"
+                        title="Home"
                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-900"
                       >
                         Home
@@ -133,8 +133,8 @@ export const Nav = () => {
                     <li>
                       <Link
                         href="/projects"
-                        aria-label="Our product"
-                        title="Our product"
+                        aria-label="Project"
+                        title="Project"
                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-900"
                       >
                         Project
@@ -144,8 +144,8 @@ export const Nav = () => {
                       <Link
                         href="https://drive.google.com/drive/folders/1jQQLKbmRDwuba0W7eH7v5aAm25Otl_Ur?usp=sharing"
                         target="_blank"
-                        aria-label="Product pricing"
-                        title="Product pricing"
+                        aria-label="Certification"
+                        title="Certification"
                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-900"
                       >
                         Certification
@@ -155,8 +155,8 @@ export const Nav = () => {
                       <Link
                         href="#contact"
                         className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-blue-900 hover:bg-blue-950 focus:shadow-outline focus:outline-none"
-                        aria-label="Sign up"
-                        title="Sign up"
+                        aria-label="Contact"
+                        title="Contact"
                       >
                         Contact
                       </Link>

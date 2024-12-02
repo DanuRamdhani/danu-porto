@@ -40,8 +40,8 @@ export const Header = () => {
 				<Image
 					className="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none sm:h-96 lg:h-full"
 					src="/images/my-foto.jpg"
-					width={500}
-					height={500}
+					width={1200}
+					height={1200}
 					priority={true}
 					alt="my foto"
 				/>

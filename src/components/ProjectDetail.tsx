@@ -67,8 +67,8 @@ export function ProjectDetail({ project }: { project: Project }) {
                     <Image
                         className="object-cover w-full h-56 rounded shadow-lg sm:h-96"
                         src={project.image || "/images/no-image.png"}
-                        width={500}
-                        height={500}
+                        width={1200}
+                        height={1200}
                         priority={true}
                         alt="" />
                 </div>

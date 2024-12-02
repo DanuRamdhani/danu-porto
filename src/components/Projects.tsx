@@ -29,8 +29,8 @@ export const Projects = ({ listProject, isProjectPage }: { listProject: Project[
                             <Image
                                 className="object-cover w-full h-56 md:h-64 xl:h-80"
                                 src={project.image || "/images/no-image.png"}
-                                width={500}
-                                height={500}
+                                width={1200}
+                                height={1200}
                                 priority={true}
                                 alt=""
                             />
