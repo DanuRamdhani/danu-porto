@@ -12,6 +12,12 @@ export default function ProjectCategory({ category }: { category: string }) {
                 {category}
             </p>
         )
+    } if (category.toLowerCase() === 'course') {
+        return (
+            <p className={`inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider bg-amber-accent-400 text-amber-900 uppercase rounded-full`}>
+                {category}
+            </p>
+        )
     }
 
 }
